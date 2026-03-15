@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilo personalizado para la barra de navegación*/
+
+.Navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(150, 150, 150, 0.60);
+    /* Color gris translúcido */
+    backdrop-filter: blur(20px);
+    /* Efecto borroso*/
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    /* CLAVE pone todo en fila*/
+    align-items: center;
+    /*Alinea los elementos en el eje vertical (Todo queda centrado en altura.)*/
+    justify-content: space-between;
+    padding: 8px 32px;
+    /*Crea espacio interno dentro del header*/
+
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 10;
+}
+
+.Menu {
+    display: flex;
+    gap: 30px;
+}
+
+.Menu a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+.Menu a:hover {
+    color: #3cff00;
+}
+
+
+/* Personalización Icono*/
+
+.Logointro img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Estilo personalizado para la imagen con texto*/
+
+.Section1 {
+    display: flex;
+}
+
+.Divintro {
+    width: 100%;
+    height: 500px;
+    background-image: url(../Img/Cordillera\ Occidental.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+
+    text-align: center;
+    color: white;
+    padding-top: 90px;
+}
+
+
+/* Estilo personalizado para las cards */
+
+.feature-card{
+    background:#f8f9f8;
+    padding:30px;
+    border-radius:14px;
+    border:1px solid #e6ebe6;
+    height:100%;
+}
+
+.icon-box{
+    width:50px;
+    height:50px;
+    background:#dff5e1;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#2ecc71;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.feature-card h5{
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.feature-card p{
+    color:#6c757d;
+}
+
+.feature-card{
+transition: all 0.25s;
+}
+
+.feature-card:hover{
+transform: translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* Espaciado interno */
+.card-body {
+    padding: 24px;
+}
+
+/* Título */
+.card-title {
+    color: #78a75a;
+    font-weight: 600;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: contain;
+    background-color: #f8f8f8;
+}
+
+
+/* =========================
+   VARIABLES DE COLOR
+========================= */
+:root {
+  --verde: #6aa84f;
+  --verde-oscuro: #4e7d3a;
+  --fondo-claro: #f9f9f9;
+  --texto: #333;
+}
+
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+  background-color: #ffffff;
+}
+
+/* =========================
+   SECCION HISTORIA
+========================= */
+.herencia {
+  background-color: #f4f8f1; /* verde MUY suave */
+  padding: 120px 20px;
+}
+
+/* CONTENEDOR CENTRAL */
+.herencia-contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITULOS */
+.herencia-subtitulo {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #7ca65c;
+  margin-bottom: 10px;
+}
+
+.herencia-titulo {
+  font-size: 30px;
+  color: #4d6f2c;
+  margin-bottom: 40px;
+}
+
+/* TEXTO HISTORIA */
+.herencia-texto {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.9;
+  max-width: 750px;
+  margin: 0 auto 80px;
+}
+
+/* ESENCIA */
+.esencia-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.esencia-item i {
+  font-size: 26px;
+  color: #7ca65c;
+  margin-bottom: 15px;
+}
+
+.esencia-item h3 {
+  font-size: 18px;
+  color: #4d6f2c;
+  margin-bottom: 10px;
+}
+
+.esencia-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .herencia {
+    padding: 80px 20px;
+  }
+
+  .esencia-items {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .herencia-titulo {
+    font-size: 26px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE EXTRA (MÓVIL)
+========================= */
+@media (max-width: 576px) {
+  .Historia h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+}
+
+/* =========================
+   Desktop
+========================= */
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px; /* 👈 IMPORTANTE: define la altura */
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Caras */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .card {
+  background-color: #f3f7f2; /* verde suave */
+  font-family: 'Inter', sans-serif;
+  color: #3f4a3c;
+}
+
+.flip-card-back h5 {
+  font-weight: 600;
+  color: #5f7d54;
+  letter-spacing: 0.5px;
+}
+
+.flip-card-back p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   SECCIONES DE SABORES
+========================= */
+
+.sabores {
+  background-color: #f9fbf7; /* continuidad visual */
+  padding: 120px 20px;
+}
+
+.sabores-header {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  text-align: left; /* como texto editorial */
+}
+
+.sabores-header h4 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #7ca65c;
+  margin-bottom: 10px;
+}
+
+.sabores-header h2 {
+  font-size: 32px;
+  color: #2f2f2f;
+  margin-bottom: 20px;
+}
+
+.sabores-header p {
+  font-size: 16px;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.btn-tabla {
+  margin-top: 0.5rem;
+  background: transparent;
+  border: 1px solid #6b8f71;
+  color: #6b8f71;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-tabla:hover {
+  background-color: #6b8f71;
+  color: white;
+}
+
+/* =========================
+   SECCIÓN CONTACTO
+========================= */
+
+.contacto {
+  background-color: #f4f8f1;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.contacto-contenido {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacto h2 {
+  font-size: 30px;
+  color: #4d6f2c;
+  margin-bottom: 20px;
+}
+
+.contacto p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.btn-whatsapp i {
+  margin-right: 8px;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+}
+
+/* SEPARADOR */
+.contacto-separador {
+  display: block;
+  margin: 25px 0;
+  color: #7ca65c;
+  font-size: 13px;
+}
+
+/* =========================
+   SECCION FORMULARIO
+========================= */
+
+/* FORMULARIO */
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d6e2cc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.contacto-form button {
+  background-color: #7ca65c;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+  background-color: #5f8a3c;
+}
+
+/* =========================
+   SECCIONES FOOTER
+========================= */
+
+.footer {
+  background-color: #1f2f0f;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR DE ICONOS */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 30px;
+}
+
+/* ICONOS */
+.footer-icons a {
+  color: #ffffff !important;   
+  font-size: 26px;             /* tamaño MEDIANO */
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* HOVER SUAVE */
+.footer-icons a:hover {
+  transform: scale(1.25);
+  opacity: 0.8;
+}
+
+/* TEXTO */
+.footer-title {
+  color: #9acd32;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  color: #cfcfcf;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.footer-location {
+  color: #8fae7d;
+  font-size: 12px;
+}
+
+.footer-icons a:hover {
+  color: #9acd32;
+  transform: scale(1.25);
+}
+
+@media (max-width: 576px) {
+  .footer-icons a {
+    font-size: 22px;
+  }
+}
+
+
