@@ -1,0 +1,46 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.12"></feDropShadow>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+
+    <!-- tapa -->
+    <rect x="52" y="16" width="56" height="14" rx="6" fill="#1F4C8F"></rect>
+
+    <!-- cuello -->
+    <rect x="60" y="26" width="40" height="16" rx="8" fill="#F8F6F1"></rect>
+
+    <!-- cuerpo botella -->
+    <path d="
+      M58 38
+      C52 48, 42 63, 40 84
+      L40 112
+      C40 132, 54 144, 80 144
+      C106 144, 120 132, 120 112
+      L120 84
+      C118 63, 108 48, 102 38
+      Z" fill="#FCFBF8" stroke="#E9E3D8" stroke-width="2"></path>
+
+    <!-- base cremita -->
+    <path d="
+      M42 118
+      C52 115, 66 114, 80 114
+      C94 114, 108 115, 118 118
+      L118 123
+      C118 132, 105 138, 80 138
+      C55 138, 42 132, 42 123
+      Z" fill="#F2E7D6"></path>
+
+    <!-- banda azul tipo envoltura -->
+    <rect x="40" y="70" width="80" height="35" rx="6" fill="#143F7D"></rect>
+
+    <!-- texto kumis -->
+    <text x="80" y="95" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-style="italic" fill="#FCFBF8" font-weight="700">
+      Kumis
+    </text>
+
+  </g>
+</svg>
