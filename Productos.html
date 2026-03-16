@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,10 @@
 
     <header class="Navbar">
         <div class="Logointro">
-            <img src="Img/Logomin.ico" alt="icono">
+            <img src="Img/Imagenlogo.png" alt="icono">
+            <h1 class="LogoTexto">
+                DelHuerto <span>Artesanal</span>
+            </h1>
         </div>
         <nav class="Menu">
             <a href="index.html">Inicio</a>
@@ -27,9 +30,8 @@
     </header>
 
     <main>
-        <!--PRODUCTOS-->
-        <!--Grids cards Boostrap-->
-        <section class="sabores">
+        <!--hero-->
+        <section class="cosecha">
             <div class="sabores-header">
                 <h4>HECHOS CON FRUTAS REALES</h4>
                 <h2>Sabores que nacen del campo</h2>
@@ -38,18 +40,23 @@
                     procesos lentos y el cuidado artesanal que nos define.
                 </p>
             </div>
+        </section>
+
+        <!--Grids cards Boostrap-->
+        <section class="sabores">
 
             <!-- Cards de productos -->
             <div class="container">
                 <div class="row">
 
+                    <!-- Natural -->
                     <div class="col-md-6 mb-3">
                         <div class="flip-card">
                             <div class="flip-card-inner">
 
                                 <!-- Fresa Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardnatural">
                                         <div class="row g-0">
                                             <div class="col-md-4">
                                                 <img src="Img/Yogurt Natural.png" class="img-fluid rounded-start"
@@ -70,13 +77,13 @@
 
                                 <!-- Reverso -->
                                 <div class="flip-card-back">
-                                    <div class="card h-100 text-center p-3">
+                                    <div class="card h-100 text-center p-3 cardnatural">
                                         <h5>Ingredientes</h5>
                                         <p>Leche entera higienizada, cultivos lácticos (Streptococcus thermophilus y
                                             Lactobacillus bulgaricus), azúcar.
                                         </p>
 
-                                        <button class="btn-tabla" data-tabla="img/tabla-mora.png">
+                                        <button class="btn-tabla" data-img="Img/TablaManzana.jpeg">
                                             Ver tabla nutricional
                                         </button>
                                     </div>
@@ -94,7 +101,7 @@
 
                                 <!--Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardfresa">
                                         <div class="row g-0">
                                             <div class="col-md-4">
                                                 <img src="Img/Fresa.png" class="img-fluid rounded-start" alt="Fresa">
@@ -113,8 +120,8 @@
                                 </div>
 
                                 <!-- Reverso -->
-                                <div class="flip-card-back">
-                                    <div class="card h-100 text-center p-3">
+                                <div class="flip-card-back ">
+                                    <div class="card h-100 text-center p-3 ">
                                         <h5>Ingredientes</h5>
                                         <p>Leche entera higienizada, cultivos lácticos (Streptococcus thermophilus y
                                             Lactobacillus bulgaricus), fresa entera natural, azúcar.</p>
@@ -132,7 +139,7 @@
 
                                 <!--Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardmango">
                                         <div class="row g-0">
                                             <div class="col-md-4">
                                                 <img src="Img/Mango.png" class="img-fluid rounded-start" alt="Fresa">
@@ -170,7 +177,7 @@
 
                                 <!--Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardguanabana">
                                         <div class="row g-0">
                                             <div class="col-md-4">
                                                 <img src="Img/Guanabana.png" class="img-fluid rounded-start"
@@ -209,7 +216,7 @@
 
                                 <!--Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardmanzanaverde">
                                         <div class="row g-0">
                                             <div class="col-md-4">
                                                 <img src="Img/Manzana Verde.png" class="img-fluid rounded-start"
@@ -248,7 +255,7 @@
 
                                 <!--Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardmora">
                                         <div class="row g-0">
                                             <div class="col-md-4">
                                                 <img src="Img/Mora.png" class="img-fluid rounded-start" alt="Fresa">
@@ -286,7 +293,7 @@
 
                                 <!--Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardmelocoton">
                                         <div class="row g-0">
                                             <div class="col-md-4">
                                                 <img src="Img/Melocotón.png" class="img-fluid rounded-start"
@@ -318,25 +325,25 @@
                         </div>
                     </div>
 
-                    <!--Kumis-->
+                    <!--Melocotón-->
                     <div class="col-md-6 mb-3">
                         <div class="flip-card">
                             <div class="flip-card-inner">
 
                                 <!--Card frontal -->
                                 <div class="flip-card-front">
-                                    <div class="card h-100">
+                                    <div class="card h-100 cardkumis">
                                         <div class="row g-0">
                                             <div class="col-md-4">
-                                                <img src="Img/Kumis.png" class="img-fluid rounded-start" alt="Fresa">
+                                                <img src="Img/Kumis.png" class="img-fluid rounded-start"
+                                                    alt="Fresa">
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Kumis</h5>
                                                     <p class="card-text">
-                                                        Contiene probioticos naturales que favorecen la digestión,
-                                                        además de proteina y calcio que contribuye al bienestar
-                                                        digestivo y fortalecimiento de los huesos.
+                                                        Refuerza el sistema inmunológico, ayuda a la digestión, y es
+                                                        rico en vitaminas A y C.
                                                     </p>
                                                 </div>
                                             </div>
@@ -346,20 +353,34 @@
 
                                 <!-- Reverso -->
                                 <div class="flip-card-back">
-                                    <div class="card h-100 d-flex align-items-center justify-content-center">
-                                        <img src="Img/TablaManzana.jpeg" class="tabla-nutricional"
-                                            alt="Tabla nutricional">
+                                    <div class="card h-100 text-center p-3">
+                                        <h5>Ingredientes</h5>
+                                        <p>Leche entera higienizada, cultivos lácticos (Streptococcus thermophilus y
+                                            Lactobacillus bulgaricus), pulpa de melocotón, azucar.</p>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
     </main>
+
+    <div class="modal-tabla" id="modalTabla">
+        <div class="modal-contenido">
+            <!-- BOTÓN CERRAR -->
+            <button class="btn-cerrar" id="cerrarModal" aria-label="Cerrar">
+                ✕
+            </button>
+            <!-- IMAGEN TABLA -->
+            <img id="imagenTabla" src="Img/TablaManzana.jpeg" alt="Tabla nutricional">
+        </div>
+    </div>
+
+    <script src="js/Botones.js"></script>
+
 </body>
 
 <!--FOOTER-->
