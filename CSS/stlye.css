@@ -1,255 +1,255 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Estilo personalizado para la barra de navegación*/
 
-.Navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75px;
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
 
-    background: rgba(160, 160, 160, 0.55);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+  background: rgba(160, 160, 160, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    padding: 0 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    z-index: 1000;
+  padding: 0 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 1000;
 }
 
-.Logointro{
-    display: flex;
-    align-items: center;
+.Logointro {
+  display: flex;
+  align-items: center;
 }
 
-.Logointro img{
-    max-height: 55px;
-    max-width: 55px;
+.Logointro img {
+  max-height: 55px;
+  max-width: 55px;
 }
- 
+
 /* Estilos para la tipografia del logo */
-.LogoTexto{
+.LogoTexto {
   padding: 5px;
-    font-size:20px;
-    font-weight:700;
-    color:white;
-    margin:0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
 }
 
-.LogoTexto span{
-    color:#39ff14;
+.LogoTexto span {
+  color: #39ff14;
 }
 
 /*Estilos para la personalizacion de botones del navbar */
-.Menu{
-    display: flex;
-    align-items: center;
-    gap: 35px;
+.Menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
 }
 
-.Menu a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.3s ease;
+.Menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-.Menu a:hover{
-    color: #39ff14;
+.Menu a:hover {
+  color: #39ff14;
 }
 
-.MenuIcono{
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    line-height: 1;
+.MenuIcono {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
 }
 
 /* Personalización Icono*/
 
 .Logointro img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 /* Estilo personalizado HERO para la imagen con texto*/
 
-.Section1 .Section1{
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("tu-imagen.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.Section1 .Section1 {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("tu-imagen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 40px 20px;
+  padding: 40px 20px;
 }
 
 .Divintro {
-    width: 100%;
-    height: 500px;
-    background-image: url(../Img/Cordillera\ Occidental.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 100%;
+  height: 500px;
+  background-image: url(../Img/Cordillera\ Occidental.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.intro{
-    max-width: 720px;
-    padding-top: 80px;
+.intro {
+  max-width: 720px;
+  padding-top: 80px;
 }
 
-.intro h1{
-    margin: 0;
-    color: white;
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
+.intro h1 {
+  margin: 0;
+  color: white;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
 }
 
-.intro h1 span{
-    color: #39ff14;
-    font-style: italic;
-    font-weight: 700;
+.intro h1 span {
+  color: #39ff14;
+  font-style: italic;
+  font-weight: 700;
 }
 
-.intro p{
-    margin: 25px auto 0;
-    max-width: 620px;
-    color: rgba(255,255,255,0.9);
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    line-height: 1.6;
-    text-align: center;
+.intro p {
+  margin: 25px auto 0;
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  text-align: center;
 }
 
-.botonesIntro{
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
+.botonesIntro {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .btnPrincipal,
-.btnSecundario{
-    text-decoration: none;
-    padding: 16px 28px;
-    border-radius: 14px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: 0.3s ease;
-    display: inline-block;
+.btnSecundario {
+  text-decoration: none;
+  padding: 16px 28px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  display: inline-block;
 }
 
-.btnPrincipal{
-    background-color: #39ff14;
-    color: white;
-    border: none;
+.btnPrincipal {
+  background-color: #39ff14;
+  color: white;
+  border: none;
 }
 
-.btnPrincipal:hover{
-    background-color: #2fe10f;
-    transform: translateY(-2px);
+.btnPrincipal:hover {
+  background-color: #2fe10f;
+  transform: translateY(-2px);
 }
 
-@media (max-width: 768px){
-    .Section1{
-        min-height: 85vh;
-        padding: 30px 15px;
-    }
+@media (max-width: 768px) {
+  .Section1 {
+    min-height: 85vh;
+    padding: 30px 15px;
+  }
 
-    .intro p{
-        max-width: 95%;
-    }
+  .intro p {
+    max-width: 95%;
+  }
 
-    .botonesIntro{
-        flex-direction: column;
-        align-items: center;
-    }
+  .botonesIntro {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .btnPrincipal{
-        width: 100%;
-        max-width: 320px;
-        text-align: center;
-    }
+  .btnPrincipal {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
 }
 
 
 /* Estilo personalizado para las cards */
 
-.feature-card{
-    background:#f8f9f8;
-    padding:30px;
-    border-radius:14px;
-    border:1px solid #e6ebe6;
-    height:100%;
+.feature-card {
+  background: #f8f9f8;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e6ebe6;
+  height: 100%;
 }
 
-.icon-box{
-    width:50px;
-    height:50px;
-    background:#dff5e1;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#2ecc71;
-    font-size:22px;
-    margin-bottom:15px;
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background: #dff5e1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2ecc71;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
-.feature-card h5{
-    font-weight:600;
-    margin-bottom:10px;
+.feature-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.feature-card p{
-    color:#6c757d;
+.feature-card p {
+  color: #6c757d;
 }
 
-.feature-card{
-transition: all 0.25s;
+.feature-card {
+  transition: all 0.25s;
 }
 
-.feature-card:hover{
-transform: translateY(-6px);
-box-shadow:0 15px 30px rgba(0,0,0,0.08);
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Espaciado interno */
 .card-body {
-    padding: 24px;
+  padding: 24px;
 }
 
 /* Título */
 .card-title {
-    color: #78a75a;
-    font-weight: 600;
+  color: #78a75a;
+  font-weight: 600;
 }
 
 .card-img-top {
-    height: 220px;
-    object-fit: contain;
-    background-color: #f8f8f8;
+  height: 220px;
+  object-fit: contain;
+  background-color: #f8f8f8;
 }
 
 
@@ -282,7 +282,8 @@ body {
    SECCION HISTORIA
 ========================= */
 .herencia {
-  background-color: #f4f8f1; /* verde MUY suave */
+  background-color: #f4f8f1;
+  /* verde MUY suave */
   padding: 120px 20px;
 }
 
@@ -376,41 +377,43 @@ body {
 ========================= */
 
 .flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 300px; /* 👈 IMPORTANTE: define la altura */
-    perspective: 1000px;
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  /* 👈 IMPORTANTE: define la altura */
+  perspective: 1000px;
 }
 
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* Caras */
 .flip-card-front,
 .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
 }
 
 .flip-card-back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-card-back .card {
-  background-color: #f3f7f2; /* verde suave */
+  background-color: #f3f7f2;
+  /* verde suave */
   font-family: 'Inter', sans-serif;
   color: #3f4a3c;
 }
@@ -426,57 +429,131 @@ body {
   line-height: 1.6;
 }
 
+.cardnatural {
+  background-color: #f0fff4 ;
+  border: 1px solid #edfff2 ;
+  border-radius: 20px;
+}
+.cardnatural h5{
+  color: #41553b;
+}
+
+.cardfresa {
+  background-color: #fff5f7 ;
+  border: 1px solid #fcedf0 ;
+  border-radius: 20px;
+}
+.cardfresa h5 {
+  color: #9b2c3a;
+}
+
+.cardmango {
+  background-color: #fffaf0 ;
+  border: 1px solid #fff8ea ;
+  border-radius: 20px;
+}
+.cardmango h5 {
+  color: #b87900;
+}
+
+
+.cardguanabana {
+  background-color: #f0fff4 ;
+  border: 1px solid #eafdef ;
+  border-radius: 20px;
+}
+.cardguanabana h5 {
+  color: #2f6b4f;
+}
+
+
+.cardmanzanaverde {
+  background-color: #f5fff0 ;
+  border: 1px solid #eefce7 ;
+  border-radius: 20px;
+}
+.cardmanzanaverde h5 {
+  color: #3f6a3a;
+}
+
+
+.cardmora {
+  background-color: #f8f5ff ;
+  border: 1px solid #f3effd ;
+  border-radius: 20px;
+}
+.cardmora h5 {
+  color: #5e2c78;
+}
+
+
+.cardmelocoton {
+  background-color: #fff5eb ;
+  border: 1px solid #fdf1e5 ;
+  border-radius: 20px;
+}
+.cardmelocoton h5 {
+  color: #a85b2c;
+}
+
+.cardkumis {
+  background-color: #eaf2fd;
+  border: 1px solid #e5f0ff;
+  border-radius: 20px;
+}
+.cardkumis h5 {
+  color: #2f3f5c;
+}
+
 
 /* =========================
    SECCIONES DE SABORES
 ========================= */
 
-.sabores {
-  background-color: #f9fbf7; /* continuidad visual */
-  padding: 120px 20px;
+.cosecha {
+  margin: 100px 20px;
+  padding: 60px 70px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background:
+    linear-gradient(rgba(255, 245, 244, 0.50)),
+    url("../Img/fresas-yogurt.png");
+    
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
 }
 
 .sabores-header {
-  max-width: 900px;
-  margin: 0 auto 70px;
-  text-align: left; /* como texto editorial */
+  max-width: 420px;
 }
 
 .sabores-header h4 {
   font-size: 12px;
-  letter-spacing: 3px;
-  color: #7ca65c;
-  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #3b7a57;
+  background: #dcefe2;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
 }
 
 .sabores-header h2 {
   font-size: 32px;
-  color: #2f2f2f;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .sabores-header p {
   font-size: 16px;
-  color: #555;
-  max-width: 500px;
-  line-height: 1.7;
-}
-
-.btn-tabla {
-  margin-top: 0.5rem;
-  background: transparent;
-  border: 1px solid #6b8f71;
-  color: #6b8f71;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-tabla:hover {
-  background-color: #6b8f71;
-  color: white;
+  color: #4b5563;
+  line-height: 1.6;
 }
 
 /* =========================
@@ -586,8 +663,9 @@ body {
 
 /* ICONOS */
 .footer-icons a {
-  color: #ffffff !important;   
-  font-size: 26px;             /* tamaño MEDIANO */
+  color: #ffffff !important;
+  font-size: 26px;
+  /* tamaño MEDIANO */
   text-decoration: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -628,4 +706,62 @@ body {
   }
 }
 
+/* BOTÓN */
+.btn-tabla {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #5f7d54;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
 
+/* MODAL */
+.modal-tabla {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-contenido {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 90%;
+  max-height: 90%;
+  position: relative;
+}
+
+.modal-contenido img {
+  max-width: 100%;
+  max-height: 70vh;
+}
+
+/* CERRAR */
+
+.btn-cerrar {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: #f3f7f2;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #5f7d54;
+}
+
+.btn-cerrar:hover {
+  background: #e6efe3;
+}
