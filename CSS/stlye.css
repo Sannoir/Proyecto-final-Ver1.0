@@ -4,52 +4,76 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-body {padding-top: 80px;}
 /* Estilo personalizado para la barra de navegación*/
 
-.Navbar {
-    position: absolute;
+.Navbar{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 75px;
 
-    background: rgba(150, 150, 150, 0.60);
-    /* Color gris translúcido */
-    backdrop-filter: blur(20px);
-    /* Efecto borroso*/
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(160, 160, 160, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
     display: flex;
-    /* CLAVE pone todo en fila*/
     align-items: center;
-    /*Alinea los elementos en el eje vertical (Todo queda centrado en altura.)*/
     justify-content: space-between;
-    padding: 8px 32px;
-    /*Crea espacio interno dentro del header*/
 
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    z-index: 10;
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 1000;
 }
 
-.Menu {
+.Logointro{
     display: flex;
-    gap: 30px;
+    align-items: center;
 }
 
-.Menu a {
-    white-space: nowrap;
+.Logointro img{
+    max-height: 55px;
+    max-width: 55px;
+}
+ 
+/* Estilos para la tipografia del logo */
+.LogoTexto{
+  padding: 5px;
+    font-size:20px;
+    font-weight:700;
+    color:white;
+    margin:0;
+}
+
+.LogoTexto span{
+    color:#39ff14;
+}
+
+/*Estilos para la personalizacion de botones del navbar */
+.Menu{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.Menu a{
     text-decoration: none;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-.Menu a:hover {
-    color: #3cff00;
+.Menu a:hover{
+    color: #39ff14;
 }
 
+.MenuIcono{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
 
 /* Personalización Icono*/
 
@@ -59,7 +83,7 @@ body {padding-top: 80px;}
     border-radius: 50%;
 }
 
-/* Estilo personalizado para la imagen con texto*/
+/* Estilo personalizado HERO para la imagen con texto*/
 
 .Section1 .Section1{
     min-height: 100vh;
@@ -90,6 +114,7 @@ body {padding-top: 80px;}
 
 .intro{
     max-width: 720px;
+    padding-top: 80px;
 }
 
 .intro h1{
@@ -98,6 +123,7 @@ body {padding-top: 80px;}
     font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 700;
     line-height: 1.1;
+    text-align: center;
 }
 
 .intro h1 span{
@@ -112,6 +138,7 @@ body {padding-top: 80px;}
     color: rgba(255,255,255,0.9);
     font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 1.6;
+    text-align: center;
 }
 
 .botonesIntro{
