@@ -31,28 +31,64 @@
 
     <!--CONTACTANOS-->
     <section class="contacto">
-        <div class="contacto-contenido">
+    <div class="contacto-card">
 
-            <h2>Conversemos</h2>
-            <p>
-                Si tienes preguntas, quieres conocer más de nuestros productos
-                o simplemente escribirnos, estamos aquí.
+        <div class="contacto-badge">
+            <span class="dot-online"></span>
+            ESTAMOS EN LÍNEA
+        </div>
+
+        <h2>¡Hola! Nos encantaría conocerte.</h2>
+
+        <form class="contacto-form">
+            <div class="contacto-step">
+                <div class="contacto-icono">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="contacto-campo">
+                    <label>Primero que nada, ¿cuál es tu nombre?</label>
+                    <input type="text" placeholder="Escribe tu nombre aquí..." required>
+                </div>
+            </div>
+
+            <div class="contacto-step">
+                <div class="contacto-icono">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+                <div class="contacto-campo">
+                    <label>¡Qué gusto! ¿A qué correo podemos responderte?</label>
+                    <input type="email" placeholder="tu@email.com" required>
+                </div>
+            </div>
+
+            <div class="contacto-step">
+                <div class="contacto-icono">
+                    <i class="fa-regular fa-message"></i>
+                </div>
+                <div class="contacto-campo">
+                    <label>¿En qué podemos asistirte hoy? Cuéntanos tus dudas.</label>
+                    <textarea placeholder="Cuéntanos con confianza..." rows="5"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-enviar-contacto">
+                ENVIAR MENSAJE <i class="fa-regular fa-paper-plane"></i>
+            </button>
+
+            <p class="contacto-legal">
+                Al continuar, aceptas que procesemos tus datos para contactarte.
             </p>
+        </form>
 
+        <div class="contacto-extra">
+            <p>Si prefieres una respuesta más rápida:</p>
             <a href="https://wa.me/573157200092" target="_blank" class="btn-whatsapp">
                 <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp
             </a>
-
-            <span class="contacto-separador">o</span>
-
-            <form class="contacto-form">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu correo" required>
-                <textarea placeholder="Tu mensaje" rows="4"></textarea>
-                <button type="submit">Enviar mensaje</button>
-            </form>
         </div>
-    </section>
+
+    </div>
+</section>
 </body>
 
 <!--FOOTER-->
