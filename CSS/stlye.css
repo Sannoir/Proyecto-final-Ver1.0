@@ -609,7 +609,7 @@ body {
   font-family: Playfair Display, serif;
   font-weight: 500;
   letter-spacing: 0.3px;
-  text-shadow: 2px 2px 3px;
+  text-shadow: 1px 1px 3px;
 }
 
 .card-text {
@@ -710,7 +710,7 @@ body {
 .contacto-campo label {
   display: inline-block;
   background: #edf4e8;
-  color: #5b714d;
+  color: #2b3a22;
   font-size: 1rem;
   line-height: 1.5;
   padding: 14px 18px;
@@ -747,7 +747,7 @@ body {
   width: 100%;
   border: none;
   border-radius: 16px;
-  background: #63ef00;
+  background: #1f2f0f;
   color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
@@ -809,33 +809,6 @@ body {
   display: none;
 }
 
-
-/* FORMULARIO */
-.contacto-form input,
-.contacto-form textarea {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border: 1px solid #d6e2cc;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.contacto-form button {
-  background-color: #1f2f0f;
-;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contacto-form button:hover {
-  background-color: #5f8a3c;
-}
 /* =========================
    SECCIONES DE LISTA INGREDIENTES
 ========================= */
@@ -890,36 +863,6 @@ body {
 /* Científico */
 .flip-card-back em {
   font-style: italic;
-}
-
-/* =========================
-   SECCION FORMULARIO
-========================= */
-
-/* FORMULARIO */
-.contacto-form input,
-.contacto-form textarea {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border: 1px solid #d6e2cc;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.contacto-form button {
-  background-color: #7ca65c;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contacto-form button:hover {
-  background-color: #5f8a3c;
 }
 
 /* =========================
