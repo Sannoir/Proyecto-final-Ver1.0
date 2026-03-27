@@ -9,6 +9,32 @@
     <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/stlye.css"> <!--Hojas de estilo en cascada (el orden si importa)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <script>
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("ok") === "1") {
+        Swal.fire({
+            title: '¡Mensaje enviado!',
+            text: 'Gracias por contactarnos 🌱 Te responderemos muy pronto.',
+            icon: 'success',
+            confirmButtonText: 'Perfecto',
+            background: '#f4f8f2',
+            color: '#2f3e2c',
+            confirmButtonColor: '#78A75A',
+            iconColor: '#78A75A',
+            backdrop: `
+                rgba(120,167,90,0.2)
+            `,
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        });
+    }
+</script>
 </head>
 
 <body>
@@ -18,9 +44,9 @@
     <header class="Navbar">
         <div class="Logointro">
             <img src="Img/Imagenlogo.png" alt="icono">
-             <h1 class="LogoTexto">
-            DelHuerto <span>Artesanal</span>
-        </h1>
+            <h1 class="LogoTexto">
+                DelHuerto <span>Artesanal</span>
+            </h1>
         </div>
         <nav class="Menu">
             <a href="index.html">Inicio</a>
@@ -29,66 +55,67 @@
         </nav>
     </header>
 
-<!--CONTACTANOS-->
+    <!--CONTACTANOS-->
     <section class="contacto">
-    <div class="contacto-card">
+        <div class="contacto-card">
 
-        <div class="contacto-badge">
-            <span class="dot-online"></span>
-            ESTAMOS EN LÍNEA
+            <div class="contacto-badge">
+                <span class="dot-online"></span>
+                ESTAMOS EN LÍNEA
+            </div>
+
+            <h2>¡Hola! Nos encantaría conocerte.</h2>
+
+            <form class="contacto-form" action="enviar.php" method="POST">
+                <div class="contacto-step">
+                    <div class="contacto-icono">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="contacto-campo">
+                        <label>Primero que nada, ¿cuál es tu nombre?</label>
+                        <input type="text" name="nombre" placeholder="Escribe tu nombre aquí..." required>
+                    </div>
+                </div>
+
+                <div class="contacto-step">
+                    <div class="contacto-icono">
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <div class="contacto-campo">
+                        <label>¡Qué gusto! ¿A qué correo podemos responderte?</label>
+                        <input type="email" name="correo" placeholder="tu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="contacto-step">
+                    <div class="contacto-icono">
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+                    <div class="contacto-campo">
+                        <label>¿En qué podemos asistirte hoy? Cuéntanos tus dudas.</label>
+                        <textarea name="mensaje" placeholder="Cuéntanos con confianza..." rows="5" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-enviar-contacto">
+                    ENVIAR MENSAJE <i class="fa-regular fa-paper-plane"></i>
+                </button>
+
+                <p class="contacto-legal">
+                    Al continuar, aceptas que procesemos tus datos para contactarte.
+                </p>
+            </form>
+
+            <div class="contacto-extra">
+                <p>Si prefieres una respuesta más rápida:</p>
+                <a href="https://wa.me/573157200092" target="_blank" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp
+                </a>
+            </div>
+
         </div>
-
-        <h2>¡Hola! Nos encantaría conocerte.</h2>
-
-        <form class="contacto-form">
-            <div class="contacto-step">
-                <div class="contacto-icono">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="contacto-campo">
-                    <label>Primero que nada, ¿cuál es tu nombre?</label>
-                    <input type="text" placeholder="Escribe tu nombre aquí..." required>
-                </div>
-            </div>
-
-            <div class="contacto-step">
-                <div class="contacto-icono">
-                    <i class="fa-solid fa-at"></i>
-                </div>
-                <div class="contacto-campo">
-                    <label>¡Qué gusto! ¿A qué correo podemos responderte?</label>
-                    <input type="email" placeholder="tu@email.com" required>
-                </div>
-            </div>
-
-            <div class="contacto-step">
-                <div class="contacto-icono">
-                    <i class="fa-regular fa-message"></i>
-                </div>
-                <div class="contacto-campo">
-                    <label>¿En qué podemos asistirte hoy? Cuéntanos tus dudas.</label>
-                    <textarea placeholder="Cuéntanos con confianza..." rows="5"></textarea>
-                </div>
-            </div>
-
-            <button type="submit" class="btn-enviar-contacto">
-                ENVIAR MENSAJE <i class="fa-regular fa-paper-plane"></i>
-            </button>
-
-            <p class="contacto-legal">
-                Al continuar, aceptas que procesemos tus datos para contactarte.
-            </p>
-        </form>
-
-        <div class="contacto-extra">
-            <p>Si prefieres una respuesta más rápida:</p>
-            <a href="https://wa.me/573157200092" target="_blank" class="btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp
-            </a>
-        </div>
-
-    </div>
-</section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 <!--FOOTER-->

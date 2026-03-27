@@ -2,28 +2,41 @@
 <html lang="es">
 
 <head>
+    <!-- =========================
+         META / SEO
+    ========================== -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-        content="yogur natural, yogur artesanal, yogur sin endulzantes, yogur sin colorantes, yogur 100% natural,sin aditivos artificiales, sin conservantes, ingredientes naturales, fermentación natural, cultivo vivo, probióticos naturales, leche fresca, proceso artesanal, alimentación saludable, vida sana, bienestar digestivo, microbiota intestinal">
+        content="yogur natural, yogur artesanal, yogur sin endulzantes, yogur sin colorantes, yogur 100% natural, sin aditivos artificiales, sin conservantes, ingredientes naturales, fermentación natural, cultivo vivo, probióticos naturales, leche fresca, proceso artesanal, alimentación saludable, vida sana, bienestar digestivo, microbiota intestinal">
     <meta name="description"
         content="Yogur natural artesanal sin azúcar, sin colorantes ni endulzantes artificiales, elaborado con ingredientes naturales y fermentación tradicional.">
+
     <title>Del Huerto</title>
-    <link rel="ICON" href="Img/eco_24dp_78A75A_FILL0_wght400_GRAD0_opsz24.svg" type="image/x-icon">
+    <link rel="icon" href="Img/eco_24dp_78A75A_FILL0_wght400_GRAD0_opsz24.svg" type="image/x-icon">
+
+    <!-- =========================
+         ESTILOS
+    ========================== -->
     <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/stlye.css"> <!--Hojas de estilo en cascada (el orden si importa)-->
+    <link rel="stylesheet" href="CSS/stlye.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
     <header class="Navbar">
         <div class="Logointro">
-            <img src="Img/Imagenlogo.png" alt="icono">
-             <h1 class="LogoTexto">
-            DelHuerto <span>Artesanal</span>
-        </h1>
+            <img src="Img/Imagenlogo.png" alt="Logo de Del Huerto Artesanal">
+            <h1 class="LogoTexto">
+                DelHuerto <span>Artesanal</span>
+            </h1>
         </div>
+
         <nav class="Menu">
             <a href="index.html">Inicio</a>
             <a href="Productos.html">Productos</a>
@@ -31,31 +44,102 @@
         </nav>
     </header>
 
-    <Main>
-        <!--Imagen Backroung-->
-        <section class="Section1">
-            <div class="Divintro">
-                <div class="intro">
-                    <h1>
-                        Tradición y Frescura <br>
-                        <span>en cada Gota</span>
-                    </h1>
-                    <p>
-                        Yogurt artesanal elaborado con procesos tradicionales y leche fresca de las montañas de
-                        Colombia.
-                    </p>
-                    <div class="botonesIntro">
-                        <a href="Productos.html" class="btnPrincipal">Conoce nuestros productos →</a>
-                        </div>
-                </div>
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+    <main>
+
+        <!-- =========================
+             HERO / CARRUSEL
+        ========================== -->
+       <section class="Section1 apple-hero">
+  <div
+    id="heroCarousel"
+    class="carousel slide hero-carousel"
+    data-bs-ride="carousel"
+    data-bs-interval="6000"
+    data-bs-pause="false"
+  >
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="hero-slide" style="background-image: url('Img/Cordillera Occidental.png');">
+          <div class="hero-media-layer"></div>
+          <div class="intro hero-content">
+            <h1>
+              Tradición y Frescura <br>
+              <span>en cada Gota</span>
+            </h1>
+            <p>
+              Yogurt artesanal elaborado con procesos tradicionales y leche fresca de las montañas de Colombia.
+            </p>
+            <div class="botonesIntro">
+              <a href="Productos.html" class="btnPrincipal">Conoce nuestros productos →</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
 
-        <!--Cards-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('Img/cereal.jpeg');">
+          <div class="hero-media-layer"></div>
+          <div class="intro hero-content">        
+            <h1>
+              Del campo <br>
+              <span>a tu mesa</span>
+            </h1>
+            <p>
+              Ingredientes honestos, textura suave y una experiencia artesanal elegante.
+            </p>
+            <div class="botonesIntro">
+              <a href="Productos.html" class="btnPrincipal">Descubre los sabores →</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="container my-5">
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('Img/muestra.jpeg');">
+          <div class="hero-media-layer"></div>
+          <div class="intro hero-content">
+            <h1>
+              Sabor Natural <br>
+              <span>de verdad</span>
+            </h1>
+            <p>
+              Frescura, tradición y bienestar en una sola experiencia.
+            </p>
+            <div class="botonesIntro">
+              <a href="Contacto.html" class="btnPrincipal">Contáctanos →</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+
+    <div class="carousel-indicators hero-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+        <!-- =========================
+             FEATURES / CARDS
+        ========================== -->
+        <section class="container my-5 reveal">
             <div class="row g-4">
 
                 <div class="col-md-4">
@@ -89,11 +173,12 @@
                 </div>
 
             </div>
+        </section>
 
-        </div>
-
-        <!--HISTORIA-->
-        <section class="herencia">
+        <!-- =========================
+             HISTORIA / HERENCIA
+        ========================== -->
+        <section class="herencia reveal">
             <div class="herencia-contenedor">
 
                 <h4 class="herencia-subtitulo">NUESTRA HERENCIA</h4>
@@ -138,34 +223,50 @@
                         </p>
                     </div>
                 </div>
+
             </div>
         </section>
-    </Main>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://www.tiktok.com/@delhuertoartesanal_" target="_blank" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="https://www.instagram.com/delhuertoartesanal/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/573157200092" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="mailto:atencionalcliente.delhuerto@gmail.com" target="_blank" aria-label="Correo">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+
+        <h3 class="footer-title">DEL HUERTO ARTESANAL</h3>
+        <p class="footer-copy">© 2024 · Hecho con amor en Colombia.</p>
+        <p class="footer-location">
+            <i class="fa-solid fa-location-dot"></i> Cali, Valle del Cauca
+        </p>
+    </footer>
+
+    <!-- =========================
+         SCRIPTS
+    ========================== -->
+    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="js/Botones.js"></script>
+
 </body>
-
-
-<!--FOOTER-->
-<footer class="footer">
-     <div class="footer-icons">
-        <a href="https://www.tiktok.com/@delhuertoartesanal_" aria-label="TikTok" target="_blank">
-            <i class="fa-brands fa-tiktok"></i>
-        </a>
-        <a href="https://www.instagram.com/delhuertoartesanal/" target="_blank"  aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://wa.me/573157200092" aria-label="WhatsApp" target="_blank" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="mailto:atencionalcliente.delhuerto@gmail.com" target="_blank"  aria-label="Correo">
-            <i class="fa-regular fa-envelope"></i>
-        </a>
-    </div>
-
-    <h3 class="footer-title">DEL HUERTO ARTESANAL</h3>
-    <p class="footer-copy">© 2024 · Hecho con amor en Colombia.</p>
-    <p class="footer-location">
-        <i class="fa-solid fa-location-dot"></i> Cali, Valle del Cauca
-    </p>
-</footer>
 
 </html>
